@@ -4,7 +4,8 @@
   "description": "Website for Hacker Escape Rooms",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "sass": "sass --no-source-map src/main.scss css/main.css",
+   "watch": "sass --no-source-map --watch src/main.scss css/main.css"
   },
   "repository": {
     "type": "git",
