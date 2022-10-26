@@ -1,0 +1,22 @@
+{
+  "name": "hacker-escape-rooms",
+  "version": "1.0.0",
+  "description": "Website for Hacker Escape Rooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arash-SJPI22/Hacker-Escape-Rooms.git"
+  },
+  "author": "Arash SJPI22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arash-SJPI22/Hacker-Escape-Rooms/issues"
+  },
+  "homepage": "https://github.com/Arash-SJPI22/Hacker-Escape-Rooms#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
