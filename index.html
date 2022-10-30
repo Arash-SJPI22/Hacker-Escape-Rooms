@@ -12,27 +12,35 @@
 <body>
     <div class="container">
         <header class="header">
-            <img src="images/company_logo_x1_001.png" alt="Company logo of ESC">
+            <img class="header__img" src="images/company_logo_x1_001.png" alt="Company logo of ESC">
             <h1>Hacker Escape Rooms</h1>
-            <nav class="headerMenu">
-                <ul>
-                    <li><a href="index.html">Play online</a></li>
-                    <li><a href="index.html">Play on-site</a></li>
-                    <li><a href="index.html">The story</a></li>
-                    <li><a href="index.html">Contact us</a></li>
+            <div class="hamburger-menu">
+                <figure class="header__figure">
+                    <img src="images/hamburger_line_x1_001.svg" alt="a small straight line">
+                    <img src="images/hamburger_line_x1_001.svg" alt="a small straight line">
+                    <img src="images/hamburger_line_x1_001.svg" alt="a small straight line">
+                </figure>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__ul" hidden="hidden">
+                    <li><a href="#">Play online</a></li>
+                    <li><a href="#">Play on-site</a></li>
+                    <li><a href="#">The story</a></li>
+                    <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main">
-            <figure>
-                <img src="images/header_hacker_logo_x1_001.png"
+            <figure class="main__figure">
+                <img src="images/header_hacker_logo_x1_003.png"
                     alt="An image of an hacker sitting infront of multiple computer screens with code on them in a server room with a lot of.">
             </figure>
-            <section class="topMain">
-                <a class="onlineChallenges" href="index.html">Online challenges</a>
-                <a class="onSiteChallenges" href="index.html">On-site challenges</a>
-                <article class="customerQuotes">
-                    <ul>
+            <div class="availableChallenges">
+                <a class="button button--blue online-challanges" href="#">Online challenges</a>
+                <a class="on-site-challenges" href="#">On-site challenges</a>
+
+                <div class="customerQuotes">
+                    <ul class="main__ul">
                         <li><img src="images/template_personhead_x1_001.png"
                                 alt="A picture of the person who wrote the quote">
                             <p><cite>This is a quote about how amazing this place is and how much fun me and my friends
@@ -44,112 +52,122 @@
                                     had when we tried it</cite> John Doe, visited us in September 2021</p>
                         </li>
                     </ul>
-                </article>
-                <article class="availableChallenges">
-                    <ul>
-                        <li>
-                            <img src="images/header_hacker_logo_x1_001.png"
+                </div>
+
+                <h2>Popular challenges right now</h2>
+                <ul class="cards">
+                    <li>
+                        <div class="card">
+                            <img class="card__img" src="images/header_hacker_logo_x1_003.png"
                                 alt="An image of an hacker sitting infront of multiple computer screens with code on them in a server room with a lot of.">
                             <h2>Title of room (on-site)</h2>
-                            <ul>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_emptystar_x1_001.png" alt="An empty red review star"></li>
+                            <ul class="card__ul">
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_emptystar_x1_001.svg" alt="An empty red review star"></li>
+                                <li>2-6 participants</li>
                             </ul>
-                            <p class="roomParticipants">2-6 participants</p>
+                            <!-- <p class="roomParticipants">2-6 participants</p> -->
                             <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo
                                 nocere tibi erit, et non inimicos, et</p>
-                            <a class="bookThisRoom" href="index.html">Book this room</a>
-                        </li>
-                        <li>
-                            <img src="images/header_hacker_logo_x1_001.png"
+                            <a class="button button--red button--red--small" href="#">Book this room</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img class="card__img" src="images/header_hacker_logo_x1_003.png"
                                 alt="An image of an hacker sitting infront of multiple computer screens with code on them in a server room with a lot of.">
                             <h2>Title of room (on-site)</h2>
-                            <ul>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_emptystar_x1_001.png" alt="An empty red review star"></li>
+                            <ul class="card__ul">
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_emptystar_x1_001.svg" alt="An empty red review star"></li>
+                                <li>2-6 participants</li>
                             </ul>
-                            <p class="roomParticipants">2-6 participants</p>
+
                             <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo
                                 nocere tibi erit, et non inimicos, et</p>
-                            <a class="bookThisRoom" href="index.html">Book this room</a>
-                        </li>
-                        <li>
-                            <img src="images/header_hacker_logo_x1_001.png"
+                            <a class="button button--red button--red--small" href="#">Book this room</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card">
+                            <img class="card__img" src="images/header_hacker_logo_x1_003.png"
                                 alt="An image of an hacker sitting infront of multiple computer screens with code on them in a server room with a lot of.">
                             <h2>Title of room (on-site)</h2>
-                            <ul>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_filedstar_x1_001.png" alt="A filed red review star"></li>
-                                <li><img src="images/review_emptystar_x1_001.png" alt="An empty red review star"></li>
+                            <ul class="card__ul">
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_filedstar_x1_001.svg" alt="A filed red review star"></li>
+                                <li><img src="images/review_emptystar_x1_001.svg" alt="An empty red review star"></li>
+                                <li>2-6 participants</li>
                             </ul>
-                            <p class="roomParticipants">2-6 participants</p>
+
                             <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo
                                 nocere tibi erit, et non inimicos, et</p>
-                            <a class="bookThisRoom" href="index.html">Book this room</a>
-                        </li>
-                    </ul>
-                </article>
-                <a class="onlineChallenges" href="index.html">Online challenges</a>
-                <a class="onSiteChallenges" href="index.html">On-site challenges</a>
-            </section>
-            <section class="middleMain">
-                <article class="companyStory">
-                    <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
-                        quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
-                    <a class="readTheFullStory" href="index.html">Read the full story</a>
-                </article>
-            </section>
-            <section class="bottomMain">
+                            <a class="button button--red button--red--small" href="#">Book this room</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="button button--blue online-challanges" href="#">Online challenges</a>
+            <a class="on-site-challenges" href="#">On-site challenges</a>
+            <article class="companyStory">
+                <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
+                    quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+                <a class="button button--on-dark" href="#">Read the full story</a>
+            </article>
+            <div class="book-on-site">
                 <figure class="figBookOnSite">
                     <img src="images/index_personatcomputer_x1_001.png" alt="Two persons looking at a laptop screen">
                 </figure>
                 <h2>Play with your friends or build your team stronger at work</h2>
                 <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
                     erit, et non inimicos, et</p>
-                <a href="index.html">Book on-site today</a>
+                <a class="button button--red" href="#">Book on-site today</a>
                 <figure class="figSeeChallenges">
                     <img src="images/index_personatcomputer_x1_002.png" alt="One person looking at a computer screen">
                 </figure>
                 <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
                 <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
                     erit, et non inimicos, et</p>
-                <a href="index.html">See all challenges</a>
-            </section>
+                <a class="button button--red" href="#">See all challenges</a>
+            </div>
         </main>
         <footer class="footer">
-            <article class="footerCompanyText">
+            <section class="footerCompanyText">
                 <h3>[Esc] Hacker Escape Rooms</h3>
                 <p>
                     Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
                     quoque
                     vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.
                 </p>
-            </article>
-
+            </section>
             <nav class="footerMenus">
-                <h3>Site map</h3>
-                <ul>
-                    <li><a href="index.html">The Story</a></li>
-                    <li><a href="index.html">Contact Us</a></li>
-                    <li><a href="index.html">Legal</a></li>
-                    <li><a href="index.html">Play online</a></li>
-                    <li><a href="index.html">Play on-site</a></li>
-                </ul>
-
-                <h3>Follow us on</h3>
-                <ul>
-                    <li><a href="index.html">Facebook</a></li>
-                    <li><a href="index.html">Instagram</a></li>
-                    <li><a href="index.html">Twitter</a></li>
-                </ul>
+                <section class="sitemap">
+                    <h3>Site map</h3>
+                    <ul>
+                        <li><a href="#">The Story</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Play online</a></li>
+                        <li><a href="#">Play on-site</a></li>
+                    </ul>
+                </section>
+                <section class="socialmedia">
+                    <h3>Follow us on</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </section>
             </nav>
         </footer>
     </div>
