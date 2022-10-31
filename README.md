@@ -2,17 +2,30 @@ Project coding guidelines
 
 Naming convention:
 
-- BEM
+- BEM - Arash version 0.01a
 
-HTML/CSS:
+  - each block should be self-contained and not carry the parrents name unless:
+    - there is risk of multiple entities of the same block
+    - : if so it should carry the closest contextual parrents name as shortend as possible with a hyfen. Ex:
+      <header class="header">
+        <nav class="head-nav"> // since there can be multiple nav's in the html
+          <ul class="head-nav__menu">
+            <li class="head-nav__menu-item">
+              <a class="head-nav__menu-link">Home</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-- Hypphen and lowercase
-- an-example
+  HTML/CSS:
 
-JS:
+  - Hypphen and lowercase
+  - an-example
 
-- camelCase
-- anExample
+  JS:
+
+  - camelCase
+  - anExample
 
 HTML semantics:
 
