@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 $colors: (
     backgroundColorPrimary: #E5E5E5,
     backgroundColorSecondary: #011827,
@@ -9,7 +11,6 @@ $colors: (
     morst: #FFFFFF,
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html {
     /* 62.5% of 16px = 10px */
@@ -29,6 +30,7 @@ header, footer, .companyStory {
     color: #FFFFFF;
 }
 
+
 .button {
     border-radius: 4px;
     text-decoration: none;
@@ -36,31 +38,31 @@ header, footer, .companyStory {
     font-weight: 700;
     padding-top: 19px;
     padding-bottom: 19px;
-}
 
-.button--red {
-    background-color: map-get($colors, linkColorPrimary);
-    color: map-get($colors, morst);
-}
+    &--red {
+        background-color: map-get($colors, linkColorPrimary);
+        color: map-get($colors, morst);
+    }
 
-.button--blue {
-    background-color: map-get($colors, linkColorsecondary);
-    color: map-get($colors, backgroundColorSecondary);
-}
+    &--blue {
+        background-color: map-get($colors, linkColorsecondary);
+        color: map-get($colors, backgroundColorSecondary);
+    }
 
-.button--on-dark {
-    background-color: transparent;
-    color: map-get($colors, linkColorsecondary);
-    border: 2px solid map-get($colors, linkColorsecondary);
-}
+    &--on-dark {
+        background-color: transparent;
+        color: map-get($colors, linkColorsecondary);
+        border: 2px solid map-get($colors, linkColorsecondary);
+    }
 
-.button--red--small {
-    font-size: 1.8rem;
-    padding: 12px 34px;
-    display: inline-block;
-    margin-left: 160px;
-    margin-right: 10px;
-    margin-bottom: 12px;
+    &--red--small {
+        font-size: 1.8rem;
+        padding: 12px 34px;
+        display: inline-block;
+        margin-left: 160px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
 }
 
 .cards {
@@ -80,7 +82,7 @@ header, footer, .companyStory {
     text-align: left;
     width: 363px;
     
-    .card__img {
+    &__img {
         height: 100%;
         width: 100%;
         border-radius: 8px 8px 0px 0px;
@@ -93,17 +95,18 @@ header, footer, .companyStory {
         font-weight: 400;
     }
 
-    .card__ul {
+    &__ul {
         display: flex;
         text-align: left;
         padding-left: 17px;
     }
-    .card__ul li {
+
+    &__ul li {
         font-size: 1.4rem;
         padding: 4px;
         
     }
-    .card__ul li:nth-child(6) {
+    &__ul li:nth-child(6) {
         font-size: 1.4rem;
         padding-left: 10px;
         
@@ -116,11 +119,11 @@ header, footer, .companyStory {
     }
 }
 
-header {
+.header {
     display: flex;
     padding: 27px;
 
-    .header__img {
+    &__img {
         height: 82px;
         width: 128px;
     }
@@ -153,10 +156,10 @@ ul {
     padding-left: 0;
 }
 
-main {
+.main {
     text-align: center;
 
-    .main__figure{
+    &__figure{
         margin: 0;
 
         img {
@@ -180,7 +183,7 @@ main {
         font-size: 1.6rem;
     }
 
-    .main__ul {
+    &__ul {
         display: flex;
         overflow: hidden;
 

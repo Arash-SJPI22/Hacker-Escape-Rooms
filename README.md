@@ -3,16 +3,25 @@ Project coding guidelines
 Naming convention:
 
 - BEM
-- Camel
+
+HTML/CSS:
+
+- Hypphen & lowercase
+- an-example
+
+JS:
+
+- camelCase
+- anExample
 
 HTML semantics:
 
 CSS structure:
 
-- variabels
 - imports
+- variabels
 - general mixers
-- classes in the order of the html
+- classes in the same order as the html
 
 - keywords in selectors/classes are ordered
   - alphabeticly ascending
