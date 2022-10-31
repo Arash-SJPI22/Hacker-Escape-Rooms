@@ -26,33 +26,78 @@ a {
   text-decoration: none;
 }
 
+/* .button {
+    border-radius: 4px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 19px;
+    padding-top: 19px;
+
+    &--red {
+        background-color: map-get($colors, primary-red);
+        color: map-get($colors, secondary-white);
+    }
+
+    &--blue {
+        background-color: map-get($colors, secondary-blue);
+        color: map-get($colors, primary-blue);
+    }
+
+    &--on-dark {
+        background-color: transparent;
+        color: map-get($colors, secondary-blue);
+        border: 2px solid map-get($colors, secondary-blue);
+    }
+
+    &--red--small {
+        font-size: 1.8rem;
+        padding: 12px 34px;
+        display: inline-block;
+        margin-left: 160px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+
+    &__online-challanges {
+        color: map-get($colors, accent-blue);
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+
+    &__on-site-challenges {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 52px;
+        padding-right: 53px;
+        width: 15ch;
+    }
+}
+ */
 .button {
   border-radius: 4px;
   font-size: 2.4rem;
   font-weight: 700;
   padding-bottom: 19px;
   padding-top: 19px;
+  text-decoration: none;
 }
-.button--red {
+.button__red {
   background-color: #E3170A;
   color: #FFFFFF;
 }
-.button--blue {
+.button__red--small {
+  font-size: 1.8rem;
+  padding: 12px 34px;
+}
+.button__blue {
   background-color: #8ACFE5;
   color: #011827;
 }
-.button--on-dark {
+.button__on-dark {
   background-color: transparent;
   color: #8ACFE5;
   border: 2px solid #8ACFE5;
-}
-.button--red--small {
-  font-size: 1.8rem;
-  padding: 12px 34px;
-  display: inline-block;
-  margin-left: 160px;
-  margin-right: 10px;
-  margin-bottom: 12px;
 }
 .button__online-challanges {
   color: #36769D;
@@ -78,29 +123,31 @@ a {
   height: 82px;
   width: 128px;
 }
-.header__hamburger-figure {
+.header__site-heading {
+  font-size: 2.4rem;
+  margin: 0px 10px;
+  width: 7ch;
+}
+
+.header-nav__hamburger-figure {
   font-size: 0rem;
   max-width: 52px;
   position: absolute;
   right: -10px;
   top: 28px;
 }
-.header__hamburger-lines {
+.header-nav__hamburger-lines {
   padding: 3px;
 }
-.header__site-heading {
-  font-size: 2.4rem;
-  margin: 0px 10px;
-  width: 7ch;
-}
-.header__menu-list {
+.header-nav__menu-list {
   display: flex;
   display: none;
   justify-content: space-around;
   list-style-type: none;
   padding-left: 0;
 }
-.header__menu-items a {
+.header-nav__menu-link {
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -188,68 +235,82 @@ a {
   padding-right: 53px;
 }
 
-.cards {
+.room-booking-cards {
   display: flex;
-  padding: 30px;
-}
-.cards li {
-  padding: 20px;
+  overflow: hidden;
+  /* margin: auto; */
+  max-width: 100vw;
+  list-style-type: none;
+  padding: 10px;
 }
 
-.card {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  /* border-radius: 8px 8px 0px 0px; */
-  text-align: left;
+.room-booking-card {
+  height: 446px;
   width: 363px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  margin-left: 19px;
 }
-.card__img {
-  height: 100%;
+.room-booking-card__room-img {
   width: 100%;
   border-radius: 8px 8px 0px 0px;
 }
-.card h2 {
-  padding: 10px 38px 0px 17px;
-  margin: 0;
+.room-booking-card__descriptions {
+  margin: 12px 17px 61px 17px;
+  color: black;
+  text-align: left;
+}
+.room-booking-card__header {
   font-size: 2.8rem;
   font-weight: 400;
+  margin: 0;
 }
-.card__ul {
+.room-booking-card__review-stars-ul {
   display: flex;
-  text-align: left;
-  padding-left: 17px;
-}
-.card__ul li {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
   font-size: 1.4rem;
-  padding: 4px;
 }
-.card__ul li:nth-child(6) {
-  font-size: 1.4rem;
-  padding-left: 10px;
+.room-booking-card__review-item {
+  margin: 4.5px;
 }
-.card p {
-  display: inline-block;
-  padding: 17px;
+.room-booking-card__review-item--participants {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.room-booking-card__room-description {
   font-size: 1.8rem;
+}
+.room-booking-card__booking-button {
+  position: relative;
+  bottom: 34px;
+  right: -70px;
 }
 
 footer {
   font-size: 1.8rem;
   padding: 21px;
+  /* li a {
+      color: map-get($colors, secondary-white);
+
+  } */
+  /* &__site-maps &__site-map-item:nth-(4){
+      margin-top: 20px;
+  } */
 }
-footer h3 {
+footer__menu-heading, footer__menu-footer-heading {
   font-weight: 700;
   margin-bottom: 5px;
   margin-top: 40px;
 }
-footer ul {
-  margin-top: 0px;
+footer__site-maps, footer__social-medias {
   margin-bottom: 20px;
+  margin-top: 0px;
+  list-style-position: inside;
+  padding-left: 0px;
 }
-footer li a {
+footer__site-map-item, footer__social-media-item {
   color: #FFFFFF;
-  text-decoration: none;
-}
-footer .sitemap li:nth-child(4) {
-  margin-top: 20px;
 }
