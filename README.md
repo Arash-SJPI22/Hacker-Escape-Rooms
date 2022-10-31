@@ -6,7 +6,7 @@ Naming convention:
 
 HTML/CSS:
 
-- Hypphen & lowercase
+- Hypphen and lowercase
 - an-example
 
 JS:
@@ -23,5 +23,5 @@ CSS structure:
 - general mixers
 - classes in the same order as the html
 
-- keywords in selectors/classes are ordered
+- keywords in selectors/classes are ordered:
   - alphabeticly ascending
