@@ -4,3 +4,9 @@ html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
 }
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
