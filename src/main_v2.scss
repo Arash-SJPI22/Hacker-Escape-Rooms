@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Colors */
+$colors: (
+    accent-blue: #36769D,    
+    primary-black: #000000, 
+    primary-blue: #011827,
+    primary-gray: #B6BDB5,
+    primary-red: #E3170A,
+    primary-white: #E5E5E5,
+    secondary-blue: #8ACFE5,
+    secondary-white: #FFFFFF,
+);
+
+html {
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
