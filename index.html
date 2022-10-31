@@ -12,32 +12,36 @@
 <body>
     <div class="container">
         <header class="header">
-            <img class="header__img" src="img/company_logo_x1_001.png" alt="Company logo of ESC">
-            <h1>Hacker Escape Rooms</h1>
-            <div class="hamburger-menu">
-                <figure class="header__figure">
-                    <img src="img/hamburger_line_x1_001.svg" alt="a small straight line">
-                    <img src="img/hamburger_line_x1_001.svg" alt="a small straight line">
-                    <img src="img/hamburger_line_x1_001.svg" alt="a small straight line">
-                </figure>
+            <div class="header__banner">
+                <img class="header__logo" src="img/company_logo_x1_001.png" alt="Company logo of ESC">
+                <h1 class="header__site-heading">Hacker Escape Rooms</h1>
             </div>
+
             <nav class="header__nav">
-                <ul class="header__ul" hidden="hidden">
-                    <li><a href="#">Play online</a></li>
-                    <li><a href="#">Play on-site</a></li>
-                    <li><a href="#">The story</a></li>
-                    <li><a href="#">Contact us</a></li>
+                <figure class="header__hamburger-figure">
+                    <img class="header__hamburger-lines" src="img/hamburger_line_x1_001.svg"
+                        alt="a small straight line">
+                    <img class="header__hamburger-lines" src="img/hamburger_line_x1_001.svg"
+                        alt="a small straight line">
+                    <img class="header__hamburger-lines" src="img/hamburger_line_x1_001.svg"
+                        alt="a small straight line">
+                </figure>
+                <ul class="header__menu-list">
+                    <li class="header__menu-items"><a href="#">Play online</a></li>
+                    <li class="header__menu-items"><a href="#">Play on-site</a></li>
+                    <li class="header__menu-items"><a href="#">The story</a></li>
+                    <li class="header__menu-items"><a href="#">Contact us</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main">
-            <figure class="main__figure">
-                <img src="img/header_hacker_logo_x1_003.png"
+            <figure class="main__top-figure">
+                <img class="main__top-img" src="img/header_hacker_logo_x1_003.png"
                     alt="An image of an hacker sitting infront of multiple computer screens with code on them in a server room with a lot of.">
             </figure>
-            <div class="availableChallenges">
-                <a class="button button--blue online-challanges" href="#">Online challenges</a>
-                <a class="on-site-challenges" href="#">On-site challenges</a>
+            <div class="main__availableChallenges">
+                <a class="button button--blue button__on-site-challenges" href="#">On-site challenges</a>
+                <a class="button__online-challanges" href="#">Online challenges</a>
 
                 <div class="customerQuotes">
                     <ul class="main__ul">
@@ -54,10 +58,12 @@
                     </ul>
                 </div>
 
-                <h2>Popular challenges right now</h2>
-                <ul class="cards"> <!-- room-booking-cards-ul ? -->
+                <h2 class="main__cards-heading">Popular challenges right now</h2>
+                <ul class="cards">
+                    <!-- room-booking-cards-ul ? -->
                     <li>
-                        <div class="card"> <!-- room-booking-card -->
+                        <div class="card">
+                            <!-- room-booking-card -->
                             <img class="card__img" src="img/header_hacker_logo_x1_003.png"
                                 alt="An image of an hacker sitting infront of multiple computer screens with code on them in a server room with a lot of.">
                             <h2>Title of room (on-site)</h2>
@@ -116,59 +122,60 @@
                     </li>
                 </ul>
             </div>
-            <a class="button button--blue online-challanges" href="#">Online challenges</a>
-            <a class="on-site-challenges" href="#">On-site challenges</a>
-            <article class="companyStory">
-                <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
-                    quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
-                <a class="button button--on-dark" href="#">Read the full story</a>
-            </article>
-            <div class="book-on-site">
-                <figure class="figBookOnSite">
-                    <img src="img/index_personatcomputer_x1_001.png" alt="Two persons looking at a laptop screen">
-                </figure>
-                <h2>Play with your friends or build your team stronger at work</h2>
-                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
-                    erit, et non inimicos, et</p>
-                <a class="button button--red" href="#">Book on-site today</a>
-                <figure class="figSeeChallenges">
-                    <img src="img/index_personatcomputer_x1_002.png" alt="One person looking at a computer screen">
-                </figure>
-                <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
-                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
-                    erit, et non inimicos, et</p>
-                <a class="button button--red" href="#">See all challenges</a>
-            </div>
-        </main>
-        <footer class="footer">
-            <section class="footerCompanyText">
-                <h3>[Esc] Hacker Escape Rooms</h3>
-                <p>
-                    Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
-                    quoque
-                    vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.
-                </p>
+            <a class="button button--blue button__on-site-challenges" href="#">On-site challenges</a>
+            <a class="button__online-challanges" href="#">Online challenges</a>
+    </div>
+    <article class="main__company-story">
+        <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
+            quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+        <a class="button button--on-dark" href="#">Read the full story</a>
+    </article>
+    <div class="main__book-on-site">
+        <figure class="figBookOnSite">
+            <img src="img/index_personatcomputer_x1_001.png" alt="Two persons looking at a laptop screen">
+        </figure>
+        <h2>Play with your friends or build your team stronger at work</h2>
+        <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
+            erit, et non inimicos, et</p>
+        <a class="button button--red" href="#">Book on-site today</a>
+        <figure class="figSeeChallenges">
+            <img src="img/index_personatcomputer_x1_002.png" alt="One person looking at a computer screen">
+        </figure>
+        <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
+        <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
+            erit, et non inimicos, et</p>
+        <a class="button button--red" href="#">See all challenges</a>
+    </div>
+    </main>
+    <footer class="footer">
+        <section class="footerCompanyText">
+            <h3>[Esc] Hacker Escape Rooms</h3>
+            <p>
+                Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
+                quoque
+                vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.
+            </p>
+        </section>
+        <nav class="footerMenus">
+            <section class="sitemap">
+                <h3>Site map</h3>
+                <ul>
+                    <li><a href="#">The Story</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Play online</a></li>
+                    <li><a href="#">Play on-site</a></li>
+                </ul>
             </section>
-            <nav class="footerMenus">
-                <section class="sitemap">
-                    <h3>Site map</h3>
-                    <ul>
-                        <li><a href="#">The Story</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Legal</a></li>
-                        <li><a href="#">Play online</a></li>
-                        <li><a href="#">Play on-site</a></li>
-                    </ul>
-                </section>
-                <section class="socialmedia">
-                    <h3>Follow us on</h3>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-                </section>
-            </nav>
-        </footer>
+            <section class="socialmedia">
+                <h3>Follow us on</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </section>
+        </nav>
+    </footer>
     </div>
 </body>
