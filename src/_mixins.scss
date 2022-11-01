@@ -1,5 +1,51 @@
-@mixin screen-size($size) {
-    @media screen and (min-width: media-size($size)){
+
+
+@mixin screen-size {
+    @media screen and (min-width: media-size(960px)){
         @content;
     }
+}
+
+@mixin buttons($color) {
+    @content;
+    border-radius: 4px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    text-decoration: none;
+    
+    @if ($color == blue) {
+        background-color: color(secondary-blue);
+        color: color(primary-blue);
+    } @elseif ($color == red) {
+        background-color: color(primary-red);
+        color: color(primary-white);
+    } @elseif ($color == red-small) {
+        background-color: color(primary-red);
+        color: color(primary-white);
+        font-size: 1.8rem;
+        padding: 12px 34px;
+    } @elseif ($color == on-dark) {
+        background-color: transparent;
+        border: 2px solid color(secondary-blue);
+        color: color(secondary-blue);
+        max-width: 15ch;
+        padding: 19px 55px;
+    }
+}
+
+@mixin on-site-challenges {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 52px;
+    padding-right: 53px;
+    width: 15ch;
+}
+
+@mixin online-challenges {
+    color: color(accent-blue);
+    font-weight: 700;
+    font-size: 1.6rem;
 }
