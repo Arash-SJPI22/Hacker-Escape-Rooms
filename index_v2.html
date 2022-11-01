@@ -44,24 +44,50 @@
 
     <main class="main">
         <figure class="main-top-figure">
-            <img class="main-top-figure__img" src="img/hacker.png"
-                alt="A hacker sitting infront of multiple computer screens with code on them in a server room with a lot of computer hardware">
+            <picture>
+                <source srcset="img/hacker_large.png" media="(min-width: 960px)">
+                <img class="main-top-figure__img" src="img/hacker_small.png"
+                    alt="A hacker sitting infront of multiple computer screens with code on them in a server room with a lot of computer hardware">
+            </picture>
         </figure>
 
         <div class="room-challenges">
 
             <a class="room-challenges__button_on-site-top" href="#">On-site challenges</a>
             <a class="room-challenges__button-online-top" href="#">Online challenges</a>
+            <!-- <div class="quotes-holding"> -->
+                <ul class="customer-quotes">
+                    <li class="customer-quotes__item">
+                        <div class="customer-quote-card">
+                                <picture class="customer-quote-card__picture">
+                                    <source srcset="img/quoter_large.png" media="(min-width: 960px)" />
+                                    <img class="customer-quote-card__quoter-picture" src="img/quoter_small.png"
+                                        alt="A picture of the person who wrote the quote">
+                                </picture>
 
-            <ul class="customer-quotes">
-                <li class="customer-quotes__item">
-                    <div class="customer-quote-card">
-                        <figure>
-                            <img class="customer-quote-card__quoter-picture" src="img/quoter.png"
-                                alt="A picture of the person who wrote the quote">
-                        </figure>
-                        <blockquote>
-                            <cite class="customer-quote-card__cite">This is a quote about how amazing this place is and
+                            <blockquote class="customer-quote-card__blockquote">
+                                <cite class="customer-quote-card__cite">This is a quote about how amazing this place is
+                                    and
+                                    how
+                                    much
+                                    fun me and my friends
+                                    had when we tried it</cite>
+                                <p class="customer-quote-card__p">John Doe, visited us in September 2021
+                                </p>
+                            </blockquote>
+                        </div>
+                    </li>
+                    <li class="customer-quotes__item">
+                        <div class="customer-quote-card">
+                            <picture class="customer-quote-card__picture">
+                                <source srcset="img/quoter_large.png" media="(min-width: 960px)" />
+                                <img class="customer-quote-card__quoter-picture" src="img/quoter_small.png"
+                                    alt="A picture of the person who wrote the quote">
+                            </picture>
+
+                        <blockquote class="customer-quote-card__blockquote">
+                            <cite class="customer-quote-card__cite">This is a quote about how amazing this place is
+                                and
                                 how
                                 much
                                 fun me and my friends
@@ -70,26 +96,16 @@
                             </p>
                         </blockquote>
                     </div>
-                </li>
-                <li class="customer-quotes__item">
-                    <img class="customer-quotes__quoter-picture" src="img/quoter.png"
-                        alt="A picture of the person who wrote the quote">
-                    <blockquote class="customer-quotes__p">
-
-                        <cite class="customer-quotes__cite">This is a quote about how amazing this place is and how much
-                            fun me and my friends
-                            had when we tried it</cite>
-                        <p>John Doe, visited us in September 2021</p>
-                    </blockquote>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            <!-- </div> -->
 
             <h2 class="room-challenges__card-heading">Popular challenges right now</h2>
             <div class="room-holding">
                 <ul class="room-cards">
                     <li class="room-cards__li">
                         <div class="room-card">
-                            <img class="room-card__img" src="img/hacker.png"
+                            <img class="room-card__img" src="img/hacker_small.png"
                                 alt="A hacker sitting infront of multiple computer screens with code on them in a server room with a lot of computer hardware">
                             <div class="room-description">
                                 <h3 class="room-description__heading">Title of room (on-site)</h3>
@@ -119,7 +135,7 @@
                     </li>
                     <li class="room-cards__li">
                         <div class="room-card">
-                            <img class="room-card__img" src="img/hacker.png"
+                            <img class="room-card__img" src="img/hacker_small.png"
                                 alt="A hacker sitting infront of multiple computer screens with code on them in a server room with a lot of computer hardware">
                             <div class="room-description">
                                 <h3 class="room-description__heading">Title of room (on-site)</h3>
@@ -149,7 +165,7 @@
                     </li>
                     <li class="room-cards__li">
                         <div class="room-card">
-                            <img class="room-card__img" src="img/hacker.png"
+                            <img class="room-card__img" src="img/hacker_small.png"
                                 alt="A hacker sitting infront of multiple computer screens with code on them in a server room with a lot of computer hardware">
                             <div class="room-description">
                                 <h3 class="room-description__heading">Title of room (on-site)</h3>
@@ -192,19 +208,19 @@
         </div>
 
         <div class="product-showcases">
-            <img class="product-showcases__img" src="img/twopersonsatcomputer.png"
+            <img class="product-showcases__img product-showcases__img--bookings" src="img/twopersonsatcomputer.png"
                 alt="Two persons looking at a laptop screen with another computer screen behind it">
 
-            <div class="showcase">
+            <div class="showcase showcase--booking">
                 <h3 class="showcase__heading">Play with your friends or build your team stronger at work</h3>
                 <p class="showcase__text">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
                     inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
                 <a class="showcase__button-book-on-site" href="#">Book on-site today</a>
             </div>
 
-            <img class="product-showcases__img" src="img/onepersonatcomputer.png"
+            <img class="product-showcases__img product-showcases__img--challenges" src="img/onepersonatcomputer.png"
                 alt="One person looking at a computer screen with her fingers on the keyboard">
-            <div class="showcase">
+            <div class="showcase showcase--challenges">
                 <h3 class="showcase__heading">Play online or visit our venue for one of our 25 escape rooms</h3>
                 <p class="showcase__text">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
                     inuitam. Nemo nocere tibi erit, et non inimicos, et</p>

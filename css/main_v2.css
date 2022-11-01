@@ -34,6 +34,13 @@ ul {
   margin: 0px 10px;
   width: 7ch;
 }
+@media screen and (min-width: 960px) {
+  .head-banner__site-heading {
+    font-size: 4rem;
+    margin-top: 38px;
+    width: 20ch;
+  }
+}
 
 .hamburger-figure {
   max-width: 52px;
@@ -41,9 +48,30 @@ ul {
   right: -10px;
   top: 18px;
 }
+@media screen and (min-width: 960px) {
+  .hamburger-figure {
+    display: none;
+  }
+}
 
 .site-menu {
   display: none;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 960px) {
+  .site-menu {
+    display: flex;
+    margin-top: 40px;
+  }
+}
+.site-menu__link {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+.site-menu__link:hover {
+  color: #8ACFE5;
 }
 
 .main {
@@ -53,13 +81,10 @@ ul {
 .main-top-figure {
   margin: 0;
   overflow: hidden;
-  /* max-width: 100vw; */
   max-height: 468px;
 }
 .main-top-figure__img {
-  max-width: 100%;
-  /*         position: relative;
-          bottom: 40px; */
+  width: 100%;
 }
 
 .room-challenges {
@@ -85,14 +110,44 @@ ul {
   margin-bottom: 30px;
   margin-top: 37px;
 }
+@media screen and (min-width: 960px) {
+  .room-challenges__button_on-site-top {
+    bottom: 35px;
+    left: 50%;
+    margin: 0;
+    position: relative;
+  }
+}
 .room-challenges__button-online-top {
   color: #36769D;
   font-weight: 700;
   font-size: 1.6rem;
 }
+@media screen and (min-width: 960px) {
+  .room-challenges__button-online-top {
+    border-radius: 4px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    text-decoration: none;
+    background-color: #E3170A;
+    color: #FFFFFF;
+    bottom: 83px;
+    left: -170px;
+    padding-left: 57px;
+    padding-right: 58px;
+    position: relative;
+  }
+}
 .room-challenges__card-heading {
   font-size: 3.2rem;
   font-weight: 400;
+}
+@media screen and (min-width: 960px) {
+  .room-challenges__card-heading {
+    font-size: 3.6rem;
+  }
 }
 .room-challenges__button_on-site-bottom {
   border-radius: 4px;
@@ -112,10 +167,35 @@ ul {
   margin-bottom: 30px;
   margin-top: 37px;
 }
+@media screen and (min-width: 960px) {
+  .room-challenges__button_on-site-bottom {
+    bottom: 35px;
+    left: 50%;
+    margin: 0;
+    position: relative;
+  }
+}
 .room-challenges__button-online-bottom {
   color: #36769D;
   font-weight: 700;
   font-size: 1.6rem;
+}
+@media screen and (min-width: 960px) {
+  .room-challenges__button-online-bottom {
+    border-radius: 4px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    text-decoration: none;
+    background-color: #E3170A;
+    color: #FFFFFF;
+    bottom: 83px;
+    left: -170px;
+    padding-left: 57px;
+    padding-right: 58px;
+    position: relative;
+  }
 }
 
 .customer-quotes {
@@ -124,55 +204,55 @@ ul {
   padding-left: 0px;
   padding-right: 0px;
   overflow: hidden;
+  justify-content: center;
 }
 .customer-quotes__item {
   padding: 20px;
-  min-width: 50vmax;
-  max-width: 50%;
+}
+.customer-quotes__item:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .customer-quotes__item:nth-child(2) {
+    display: initial;
+  }
 }
 
 .customer-quote-card {
   display: flex;
-  border: 1px solid black;
   text-align: left;
-}
-.customer-quote-card figure {
-  margin: 0;
-  padding: 5px;
 }
 .customer-quote-card blockquote {
   margin: 0;
+  max-width: 75ch;
+  padding-right: 10px;
 }
 .customer-quote-card__quoter-picture {
-  min-width: 35%;
-  max-width: 100%;
+  padding-right: 10px;
 }
 .customer-quote-card__p {
   display: inline-block;
   font-size: 1.8rem;
-  margin: 10%;
+  margin-top: 5px;
 }
 .customer-quote-card__cite {
   font-size: 2.4rem;
 }
 
-/* img {
-    float:inline-start;
-    height: 72px;
-    width: 72px;
-
-}
-blockquote {
-    text-align: left;
-
-    cite {
-
-        font-size: 2.4rem
-    }
-} */
 .room-holding {
   display: flex;
-  overflow: hidden;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@media screen and (min-width: 960px) {
+  .room-holding {
+    margin-bottom: 200px;
+  }
+}
+
+.room-holding::-webkit-scrollbar {
+  display: none;
 }
 
 .room-cards {
@@ -267,27 +347,55 @@ blockquote {
 
 .product-showcases {
   display: grid;
-  grid-template-columns: 1, 1fr;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 960px) {
+  .product-showcases {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 180px;
+  }
 }
 .product-showcases__img {
+  margin: 0 auto;
   width: 100%;
-  /* object-fit: contain; */
+  object-fit: fill;
+}
+@media screen and (min-width: 960px) {
+  .product-showcases__img--booking {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+}
+@media screen and (min-width: 960px) {
+  .product-showcases__img--challenges {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
 }
 
 .showcase {
   margin: auto;
   max-width: 75ch;
-  padding: 20px;
+  padding: 0 20px;
   text-align: left;
 }
 .showcase__heading {
   font-size: 3.2rem;
   font-weight: 700;
 }
+@media screen and (min-width: 960px) {
+  .showcase__heading {
+    margin-bottom: 10px;
+  }
+}
 .showcase__text {
   font-size: 2.4rem;
   max-width: 40ch;
-  /* margin: auto; */
+}
+@media screen and (min-width: 960px) {
+  .showcase__text {
+    margin-top: 0px;
+  }
 }
 .showcase__button-book-on-site {
   border-radius: 4px;
@@ -304,6 +412,11 @@ blockquote {
   padding-left: 52px;
   padding-right: 53px;
 }
+@media screen and (min-width: 960px) {
+  .showcase__button-book-on-site {
+    margin-top: 30px;
+  }
+}
 .showcase__button-see-challenges {
   border-radius: 4px;
   font-size: 2.4rem;
@@ -318,6 +431,25 @@ blockquote {
   max-width: 15ch;
   padding-left: 55px;
   padding-right: 57px;
+}
+@media screen and (min-width: 960px) {
+  .showcase__button-see-challenges {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .showcase--booking {
+    grid-column: 2/2;
+    grid-row: 1/1;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .showcase--challenges {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
 }
 
 .footer {

@@ -1,7 +1,7 @@
 
 
-@mixin screen-size {
-    @media screen and (min-width: media-size(960px)){
+@mixin screen-size($size) {
+    @media screen and (min-width: media-size($size)){
         @content;
     }
 }
