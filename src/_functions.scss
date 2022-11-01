@@ -1,0 +1,11 @@
+@function color($color-name) {
+    @return map-get($colors, $color-name );
+}
+
+@function weight($weight-name) {
+    @return map-get($fonts, $weight-name);
+}
+
+@function media-size($width) {
+    @return map-get($media-width, $width);
+}

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-/* Colors */
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
@@ -9,4 +8,34 @@ body {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   margin: 0;
+}
+
+.header {
+  background-color: #011827;
+  padding: 27px;
+}
+
+.head-banner {
+  display: flex;
+}
+.head-banner__logo {
+  height: 82px;
+  width: 128px;
+}
+.head-banner__site-heading {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  margin: 0px 10px;
+  width: 7ch;
+}
+
+.hamburger-figure {
+  max-width: 52px;
+  position: absolute;
+  right: -10px;
+  top: 18px;
+}
+
+.site-menu {
+  display: none;
 }

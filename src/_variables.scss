@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$colors: (
+    accent-blue: #36769D,    
+    primary-black: #000000, 
+    primary-blue: #011827,
+    primary-gray: #B6BDB5,
+    primary-red: #E3170A,
+    primary-white: #FFFFFF,
+    secondary-blue: #8ACFE5,
+);
+
+$fonts: (
+    regular: 400,
+    bold: 700,
+);
+
+$media-width: (
+    mobile: 480px,
+    pad: 720px,
+    wide-screen: 1024px,
+);

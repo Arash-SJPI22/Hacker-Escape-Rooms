@@ -1,17 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Colors */
-$colors: (
-    accent-blue: #36769D,    
-    primary-black: #000000, 
-    primary-blue: #011827,
-    primary-gray: #B6BDB5,
-    primary-red: #E3170A,
-    primary-white: #FFFFFF,
-    secondary-blue: #8ACFE5,
-);
-
-
+@import './variables';
+@import './functions';
+@import './mixins';
 
 html {
     /* 62.5% of 16px = 10px */
@@ -19,7 +8,39 @@ html {
 }
 
 body {
-    background-color: map-get($colors, primary-white);
+    background-color: color(primary-white);
     font-family: 'Roboto', sans-serif;
     margin: 0;
+}
+
+.header {
+    background-color: color(primary-blue);
+    padding: 27px;
+}
+
+.head-banner {
+    display: flex;
+
+    &__logo {
+        height: 82px;
+        width: 128px;
+    }
+
+    &__site-heading {
+        color: color(primary-white);
+        font-size: 2.4rem;
+        margin: 0px 10px;
+        width: 7ch;
+    }
+}
+
+.hamburger-figure {
+    max-width: 52px;
+    position: absolute;
+    right: -10px;
+    top: 18px;
+}
+
+.site-menu {
+    display: none;
 }
