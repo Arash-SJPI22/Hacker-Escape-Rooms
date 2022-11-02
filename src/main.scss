@@ -426,7 +426,7 @@ ul {
         margin-top: 50px;
 
         @include screen-size(pad) {
-            margin: 0;
+            margin: 0 0 5px 0;
         }
     }
 
@@ -447,7 +447,7 @@ ul {
         margin-bottom: 5px;
 
         @include screen-size(pad) {
-            margin: 0;
+            margin: 0 0 5px 0;
         }
     }
 
@@ -479,7 +479,7 @@ ul {
         margin-top: 40px;
         
         @include screen-size(pad) {
-            margin: 0;
+            margin: 0 0 5px 0;
         }
     }
     @include screen-size(pad) {
