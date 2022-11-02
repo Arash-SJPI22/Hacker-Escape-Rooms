@@ -126,6 +126,9 @@ ul {
     &__card-heading {
         font-size: 3.2rem;
         font-weight: weight(regular);
+        margin-bottom: 50px;
+        margin-top: 50px;
+
         @include screen-size (pad) {
             font-size: 3.6rem;
         }
