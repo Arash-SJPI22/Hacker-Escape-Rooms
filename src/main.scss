@@ -59,6 +59,7 @@ ul {
 .site-menu {
     display: none;
     justify-content: space-evenly;
+
     @include screen-size(pad) {
         display: flex;
         margin-top: 40px;
@@ -85,7 +86,6 @@ ul {
     overflow: hidden;
     max-height: 468px;
 
-
     &__img {
         width: 100%;
     }
@@ -96,7 +96,6 @@ ul {
     margin-bottom: 60px;
     text-align: center;
     
-
     &__button_on-site-top {
         @include buttons(blue);
         @include on-site-challenges;
@@ -159,7 +158,6 @@ ul {
             position: relative;
         }
     }
-
 }
 
 .customer-quotes {
@@ -318,8 +316,7 @@ ul {
 
     &__img {
         margin: 0 auto;
-        width: 100%;
-        
+        width: 100%;       
     }
 
     &__img--booking {
@@ -346,6 +343,7 @@ ul {
     &__heading {
         font-size: 3.2rem;
         font-weight: weight(bold);
+
         @include screen-size (pad) {
             margin-bottom: 10px;
         }
@@ -354,6 +352,7 @@ ul {
     &__text {
         font-size: 2.4rem;
         max-width: 40ch;
+
         @include screen-size (pad) {
             margin-top: 0px;
         }
@@ -366,6 +365,7 @@ ul {
         max-width: 15ch;
         padding-left: 52px;
         padding-right: 53px;
+
         @include screen-size(pad){
             margin-top: 30px;
         }
@@ -378,6 +378,7 @@ ul {
         max-width: 15ch;
         padding-left: 55px;
         padding-right: 57px;
+        
         @include screen-size(pad){
             margin-top: 30px;
         }
