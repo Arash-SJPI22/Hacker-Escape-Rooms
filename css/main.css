@@ -202,7 +202,7 @@ ul {
 
 .customer-quotes {
   display: flex;
-  margin-top: 67px;
+  margin-top: 30px;
   padding-left: 0px;
   padding-right: 0px;
   overflow: hidden;
@@ -382,9 +382,14 @@ ul {
 
 .showcase {
   margin: auto;
-  max-width: 75ch;
+  max-width: 77ch;
   padding: 0 20px;
   text-align: left;
+}
+@media screen and (min-width: 960px) {
+  .showcase {
+    max-width: 76ch;
+  }
 }
 .showcase__heading {
   font-size: 3.2rem;
@@ -393,6 +398,7 @@ ul {
 @media screen and (min-width: 960px) {
   .showcase__heading {
     margin-bottom: 10px;
+    max-width: 23ch;
   }
 }
 .showcase__text {
@@ -471,7 +477,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
-    padding: 100px 0 200px;
+    padding: 100px 0 170px;
   }
 }
 
