@@ -173,7 +173,7 @@ ul {
     &__item:nth-child(2) {
         display: none;
         @include screen-size (pad) {
-            display: initial;
+            display: inherit;
         }
     }
 }
@@ -185,8 +185,7 @@ ul {
     blockquote {
         margin: 0;
         max-width: 75ch;
-        padding-right: 10px;
-        
+        padding-right: 10px;       
     }
 
     &__quoter-picture { 
@@ -196,7 +195,11 @@ ul {
     &__p {
         display: inline-block;
         font-size: 1.8rem;
-        margin-top: 5px;        
+        margin-top: 5px;
+        @include screen-size(pad){
+            margin-top: 10px;
+            max-width: 30ch;
+        }
     }
 
     &__cite {
@@ -211,7 +214,7 @@ ul {
     scrollbar-width: none;  /* Firefox */
 
     @include screen-size (pad) {
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
 }
 
@@ -297,7 +300,6 @@ ul {
         @include buttons(on-dark);
         display: block;
         margin: 50px auto 0;
-
     }
 }
 
@@ -313,7 +315,7 @@ ul {
     &__img {
         margin: 0 auto;
         width: 100%;
-        object-fit: fill;
+        
     }
 
     &__img--booking {
@@ -395,8 +397,16 @@ ul {
 .footer {
     background-color: color(primary-blue);
     color: color(primary-white);
+    display: block;
     font-size: 1.8rem;
     padding: 21px;
+
+    @include screen-size(pad) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-items: center;
+        padding: 100px 0 200px;
+    }
 }
 
 .company-description {
@@ -404,23 +414,37 @@ ul {
         font-weight: weight(bold);
         margin-bottom: 5px;
         margin-top: 50px;
+
+        @include screen-size(pad) {
+            margin: 0;
+        }
     }
 
     &__story{
         margin: 0 0 40px 0;
+        max-width: 41ch;
+    }
+
+    @include screen-size(pad) {
+        grid-column: 2/6;
+        margin-top: 50px;
     }
 }
 
-.footer-nav {
+.site-map-nav {
     &__site-map-heading {
         font-weight: weight(bold);
         margin-bottom: 5px;
+
+        @include screen-size(pad) {
+            margin: 0;
+        }
     }
 
-    &__social-media-heading {
-        font-weight: weight(bold);
-        margin-bottom: 5px;
-        margin-top: 40px;
+    @include screen-size(pad) {
+        grid-column: 8/9;
+        margin-top: 50px;
+        min-width: 12ch;
     }
 }
 
@@ -435,6 +459,23 @@ ul {
     &__link {
         color: color(primary-white);
         text-decoration: none;
+    }
+}
+
+.social-media-nav {
+    &__social-media-heading {
+        font-weight: weight(bold);
+        margin-bottom: 5px;
+        margin-top: 40px;
+        
+        @include screen-size(pad) {
+            margin: 0;
+        }
+    }
+    @include screen-size(pad) {
+        grid-column: 10/11;
+        margin-top: 50px;
+        min-width: 12ch;      
     }
 }
 

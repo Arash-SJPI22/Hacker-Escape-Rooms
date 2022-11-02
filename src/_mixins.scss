@@ -18,15 +18,15 @@
     @if ($color == blue) {
         background-color: color(secondary-blue);
         color: color(primary-blue);
-    } @elseif ($color == red) {
+    } @if ($color == red) {
         background-color: color(primary-red);
         color: color(primary-white);
-    } @elseif ($color == red-small) {
+    } @if ($color == red-small) {
         background-color: color(primary-red);
         color: color(primary-white);
         font-size: 1.8rem;
         padding: 12px 34px;
-    } @elseif ($color == on-dark) {
+    } @if ($color == on-dark) {
         background-color: transparent;
         border: 2px solid color(secondary-blue);
         color: color(secondary-blue);

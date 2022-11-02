@@ -214,7 +214,7 @@ ul {
 }
 @media screen and (min-width: 960px) {
   .customer-quotes__item:nth-child(2) {
-    display: initial;
+    display: inherit;
   }
 }
 
@@ -235,6 +235,12 @@ ul {
   font-size: 1.8rem;
   margin-top: 5px;
 }
+@media screen and (min-width: 960px) {
+  .customer-quote-card__p {
+    margin-top: 10px;
+    max-width: 30ch;
+  }
+}
 .customer-quote-card__cite {
   font-size: 2.4rem;
 }
@@ -247,7 +253,7 @@ ul {
 }
 @media screen and (min-width: 960px) {
   .room-holding {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 }
 
@@ -358,7 +364,6 @@ ul {
 .product-showcases__img {
   margin: 0 auto;
   width: 100%;
-  object-fit: fill;
 }
 @media screen and (min-width: 960px) {
   .product-showcases__img--booking {
@@ -455,8 +460,17 @@ ul {
 .footer {
   background-color: #011827;
   color: #FFFFFF;
+  display: block;
   font-size: 1.8rem;
   padding: 21px;
+}
+@media screen and (min-width: 960px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    padding: 100px 0 200px;
+  }
 }
 
 .company-description__heading {
@@ -464,18 +478,37 @@ ul {
   margin-bottom: 5px;
   margin-top: 50px;
 }
+@media screen and (min-width: 960px) {
+  .company-description__heading {
+    margin: 0;
+  }
+}
 .company-description__story {
   margin: 0 0 40px 0;
+  max-width: 41ch;
+}
+@media screen and (min-width: 960px) {
+  .company-description {
+    grid-column: 2/6;
+    margin-top: 50px;
+  }
 }
 
-.footer-nav__site-map-heading {
+.site-map-nav__site-map-heading {
   font-weight: 700;
   margin-bottom: 5px;
 }
-.footer-nav__social-media-heading {
-  font-weight: 700;
-  margin-bottom: 5px;
-  margin-top: 40px;
+@media screen and (min-width: 960px) {
+  .site-map-nav__site-map-heading {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .site-map-nav {
+    grid-column: 8/9;
+    margin-top: 50px;
+    min-width: 12ch;
+  }
 }
 
 .site-maps {
@@ -488,6 +521,24 @@ ul {
 .site-maps__link {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.social-media-nav__social-media-heading {
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 960px) {
+  .social-media-nav__social-media-heading {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .social-media-nav {
+    grid-column: 10/11;
+    margin-top: 50px;
+    min-width: 12ch;
+  }
 }
 
 .social-medias {
