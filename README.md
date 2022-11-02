@@ -21,9 +21,10 @@ Naming convention:
 
 CSS structure:
 
-- imports
-- variabels
-- general mixers
+- Put these in seperate scass files
+  -- imports
+  -- variabels
+  -- general mixers
 - general selector rules for elements
 - classes in the same order as the html
   -- if there is a block that dosen't carry the parrent block name, it should be ordered below the parrent block
