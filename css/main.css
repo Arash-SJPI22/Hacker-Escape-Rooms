@@ -493,7 +493,7 @@ ul {
 }
 .company-description__story {
   margin: 0 0 40px 0;
-  max-width: 41ch;
+  max-width: 43ch;
 }
 @media screen and (min-width: 960px) {
   .company-description {
