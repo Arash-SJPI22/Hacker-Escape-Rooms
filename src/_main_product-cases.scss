@@ -1,0 +1,101 @@
+.product-showcases {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include screen-size (pad) {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 180px;
+    }
+
+    &__img {
+        margin: 0 auto;
+        width: 100%;       
+    }
+
+    &__img--booking {
+        @include screen-size (pad) {
+        grid-column: 1/1;
+        grid-row: 1/1;
+        }
+    }
+
+    &__img--challenges {
+        @include screen-size (pad) {
+        grid-column:  2/2;
+        grid-row: 2/2;
+        }
+    }
+}
+
+
+.showcase {
+    margin:auto;
+    max-width: 77ch;
+    padding: 0 20px;
+    text-align: left;
+
+    @include screen-size(pad) {
+        max-width: 76ch;
+    }
+
+    &__heading {
+        font-size: 3.2rem;
+        font-weight: weight(bold);
+
+        @include screen-size (pad) {
+            margin-bottom: 10px;
+            max-width: 23ch;
+        }
+    }
+
+    &__text {
+        font-size: 2.4rem;
+        max-width: 40ch;
+
+        @include screen-size (pad) {
+            margin-top: 0px;
+        }
+    }
+
+    &__button-book-on-site {
+        @include buttons(red);
+        display: block;
+        margin: 50px 0;
+        max-width: 15ch;
+        padding-left: 52px;
+        padding-right: 53px;
+
+        @include screen-size(pad){
+            margin-top: 30px;
+        }
+    }
+
+    &__button-see-challenges {
+        @include buttons(red);
+        display: block;
+        margin: 50px 0;
+        max-width: 15ch;
+        padding-left: 55px;
+        padding-right: 57px;
+
+        @include screen-size(pad){
+            margin-top: 30px;
+        }
+    }
+}
+
+
+.showcase--booking {
+    @include screen-size (pad) {
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
+}
+
+
+.showcase--challenges {
+    @include screen-size (pad) {
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+}

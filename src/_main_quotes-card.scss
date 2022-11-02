@@ -1,0 +1,48 @@
+.customer-quotes {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    justify-content: center;
+
+    &__item {
+        padding: 20px;
+    }
+
+    &__item:nth-child(2) {
+        display: none;
+        @include screen-size (pad) {
+            display: inherit;
+        }
+    }
+}
+
+.customer-quote-card {
+    display: flex;
+    text-align: left;
+    
+    blockquote {
+        margin: 0;
+        max-width: 75ch;
+        padding-right: 10px;       
+    }
+
+    &__quoter-picture { 
+        padding-right: 10px;
+    }
+
+    &__p {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-top: 5px;
+        @include screen-size(pad){
+            margin-top: 10px;
+            max-width: 30ch;
+        }
+    }
+
+    &__cite {
+        font-size: 2.4rem;
+    }
+}

@@ -1,0 +1,101 @@
+.footer {
+    background-color: color(primary-blue);
+    color: color(primary-white);
+    display: block;
+    font-size: 1.8rem;
+    padding: 21px;
+
+    @include screen-size(pad) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-items: center;
+        padding: 100px 0 170px;
+    }
+}
+
+
+
+.company-description {
+    &__heading {
+        font-weight: weight(bold);
+        margin-bottom: 5px;
+        margin-top: 50px;
+
+        @include screen-size(pad) {
+            margin: 0 0 5px 0;
+        }
+    }
+
+    &__story{
+        margin: 0 0 40px 0;
+        max-width: 43ch;
+    }
+
+    @include screen-size(pad) {
+        grid-column: 2/6;
+        margin-top: 50px;
+    }
+}
+
+
+
+.site-map-nav {
+    &__site-map-heading {
+        font-weight: weight(bold);
+        margin-bottom: 5px;
+
+        @include screen-size(pad) {
+            margin: 0 0 5px 0;
+        }
+    }
+
+    @include screen-size(pad) {
+        grid-column: 8/9;
+        margin-top: 50px;
+        min-width: 12ch;
+    }
+}
+
+.site-maps {
+    margin-top: 0;
+    padding: 0;
+
+    &__item:nth-child(3) {
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        color: color(primary-white);
+        text-decoration: none;
+    }
+}
+
+
+
+.social-media-nav {
+    &__social-media-heading {
+        font-weight: weight(bold);
+        margin-bottom: 5px;
+        margin-top: 40px;
+        
+        @include screen-size(pad) {
+            margin: 0 0 5px 0;
+        }
+    }
+    @include screen-size(pad) {
+        grid-column: 10/11;
+        margin-top: 50px;
+        min-width: 12ch;      
+    }
+}
+
+.social-medias {
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding: 0;
+
+    &__link {
+        color: color(primary-white);
+        text-decoration: none;
+    }
+}

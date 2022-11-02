@@ -1,0 +1,68 @@
+.room-challenges {
+    justify-items: center;
+    margin-bottom: 60px;
+    text-align: center;
+    
+    &__button_on-site-top {
+        @include buttons(blue);
+        @include on-site-challenges;
+        margin-bottom: 30px;
+        margin-top: 37px;
+
+        @include screen-size(pad) {
+            bottom: 35px;
+            left: 50%;
+            margin: 0;
+            position: relative;
+        }
+    }
+
+    &__button-online-top {
+        @include online-challenges;
+        @include screen-size(pad) {
+            @include buttons(red);
+            bottom: 83px;
+            left: -170px;
+            padding-left: 57px;
+            padding-right: 58px;
+            position: relative;
+        }
+    }
+
+    &__card-heading {
+        font-size: 3.2rem;
+        font-weight: weight(regular);
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        @include screen-size (pad) {
+            font-size: 3.6rem;
+        }
+    }
+
+    &__button_on-site-bottom {
+        @include buttons(blue);
+        @include on-site-challenges;
+        margin-bottom: 30px;
+        margin-top: 37px;
+
+        @include screen-size (pad) {
+            bottom: 35px;
+            left: 50%;
+            margin: 0;
+            position: relative;
+        }
+    }
+
+    &__button-online-bottom {
+        @include online-challenges;
+        @include screen-size(pad) {
+            @include buttons(red);
+            bottom: 83px;
+            left: -170px;
+            padding-left: 57px;
+            padding-right: 58px;
+            position: relative;
+        }
+    }
+}
