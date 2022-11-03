@@ -452,6 +452,7 @@
 }
 
 .company-description__heading {
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 5px;
   margin-top: 50px;
@@ -473,6 +474,7 @@
 }
 
 .site-map-nav__site-map-heading {
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -502,6 +504,7 @@
 }
 
 .social-media-nav__social-media-heading {
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 5px;
   margin-top: 40px;
@@ -544,6 +547,7 @@ ul {
   list-style-type: none;
 }
 
+/* Header */
 .main {
   margin: 0;
 }
@@ -556,3 +560,13 @@ ul {
 .main-top-figure__img {
   width: 100%;
 }
+
+/* Main_room-challenges 
+
+    Main_quotes-card
+
+    Main_room-cards
+*/
+/* Main_company-story */
+/* Main_product-cases */
+/* Footer */
