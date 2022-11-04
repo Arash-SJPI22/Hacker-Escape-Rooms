@@ -13,9 +13,10 @@
     }
 
     &__img {
-        margin: 0 auto;
+        margin: auto;
         max-width: 500px;
         width: 100%;
+        
         @include screen-size (pad) {
         max-width: 100%;
         }
