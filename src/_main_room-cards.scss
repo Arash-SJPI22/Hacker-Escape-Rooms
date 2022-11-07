@@ -62,6 +62,10 @@
     &__review-participants {
         margin-left: 10px;
         margin-top: 5px;
+
+        @include screen-size(pad) {
+            margin-left: 111px;
+        }
     }
 
     &__description {
