@@ -7,7 +7,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include screen-size (pad) {
+    @include screen-size (large) {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 180px;
     }
@@ -17,20 +17,20 @@
         max-width: 500px;
         width: 100%;
         
-        @include screen-size (pad) {
+        @include screen-size (large) {
         max-width: 100%;
         }
     }
 
     &__img--booking {
-        @include screen-size (pad) {
+        @include screen-size (large) {
         grid-column: 1/1;
         grid-row: 1/1;
         }
     }
 
     &__img--challenges {
-        @include screen-size (pad) {
+        @include screen-size (large) {
         grid-column:  2/2;
         grid-row: 2/2;
         }
@@ -44,7 +44,7 @@
     padding: 0 20px;
     text-align: left;
 
-    @include screen-size(pad) {
+    @include screen-size(large) {
         max-width: 76ch;
     }
 
@@ -52,7 +52,7 @@
         font-size: 3.2rem;
         font-weight: weight(bold);
 
-        @include screen-size (pad) {
+        @include screen-size (large) {
             margin-bottom: 10px;
             max-width: 23ch;
         }
@@ -62,7 +62,7 @@
         font-size: 2.4rem;
         max-width: 40ch;
 
-        @include screen-size (pad) {
+        @include screen-size (large) {
             margin-top: 0px;
         }
     }
@@ -75,7 +75,7 @@
         padding-left: 52px;
         padding-right: 53px;
 
-        @include screen-size(pad){
+        @include screen-size(large){
             margin-top: 30px;
         }
     }
@@ -88,7 +88,7 @@
         padding-left: 55px;
         padding-right: 57px;
 
-        @include screen-size(pad){
+        @include screen-size(large){
             margin-top: 30px;
         }
     }
@@ -96,7 +96,7 @@
 
 
 .showcase--booking {
-    @include screen-size (pad) {
+    @include screen-size (large) {
         grid-column: 2/2;
         grid-row: 1/1;
     }
@@ -104,7 +104,7 @@
 
 
 .showcase--challenges {
-    @include screen-size (pad) {
+    @include screen-size (large) {
         grid-column: 1/1;
         grid-row: 2/2;
     }

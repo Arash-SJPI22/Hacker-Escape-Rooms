@@ -1,13 +1,8 @@
 @import './variables';
 @import './functions';
 @import './mixins';
-@import './header';
-@import './main_room-challenges';
-@import './main_quotes-card';
-@import './main_room-cards';
-@import './main_company-story';
-@import './main_product-cases';
-@import './footer';
+
+
 
 html {
     /* 62.5% of 16px = 10px */
@@ -24,7 +19,27 @@ ul {
     list-style-type: none;
 }
 
-/* Header */
+a:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.hidden {
+    display: none;
+}
+
+@import './header';
 
 .main {
     margin: 0;
@@ -40,18 +55,10 @@ ul {
     }
 }
 
-/* Main_room-challenges 
-
-    Main_quotes-card
-
-    Main_room-cards
-*/
-
-/* Main_company-story */
-
-/* Main_product-cases */
-
-/* Footer */
-
-
+@import './main_room-challenges';
+@import './main_quotes-card';
+@import './main_room-cards';
+@import './main_company-story';
+@import './main_product-cases';
+@import './footer';
 
