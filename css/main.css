@@ -82,6 +82,7 @@ a:hover {
 }
 
 .hamburger-close {
+  animation: hamburger-close-show-delay 0.4s backwards;
   height: 30px;
   position: fixed;
   right: 3%;
@@ -95,6 +96,19 @@ a:hover {
   width: 30px;
 }
 
+@keyframes hamburger-close-show-delay {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .site-menu {
   display: none;
   justify-content: space-evenly;
@@ -115,17 +129,6 @@ a:hover {
   color: #8ACFE5;
 }
 
-@keyframes site-menu-popup {
-  0% {
-    transform: scale(0);
-  }
-  75% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .show-on {
   align-items: center;
   animation: site-menu-popup 0.2s 0.2s backwards;
@@ -144,6 +147,17 @@ a:hover {
   z-index: 101;
 }
 
+@keyframes site-menu-popup {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .show-on-link {
   font-size: 3.2rem;
 }

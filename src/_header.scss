@@ -39,6 +39,7 @@
 }
 
 .hamburger-close {
+    animation: hamburger-close-show-delay 0.4s backwards;
     height: 30px;
     position: fixed;
     right: 3%;
@@ -53,6 +54,21 @@
     }
 }
 
+@keyframes hamburger-close-show-delay {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 
 .site-menu {
@@ -76,17 +92,6 @@
     }
 }
 
-@keyframes site-menu-popup {
-    0% {
-        transform: scale(0);
-    }
-    75% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 .show-on {
     align-items: center;
@@ -104,6 +109,18 @@
     top: 1%;
     width: 94vw;
     z-index: 101;
+}
+
+@keyframes site-menu-popup {
+    0% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .show-on-link {
