@@ -24,6 +24,7 @@ a:hover {
 }
 
 .overlay {
+    animation: overlay-opacity 0.2s forwards;
     background: rgba(255, 255, 255, 0.5);
     bottom: 0;
     height: 100%;
@@ -33,6 +34,17 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 99;
+}
+
+@keyframes overlay-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
 }
 
 .hidden {

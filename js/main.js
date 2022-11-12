@@ -5,7 +5,6 @@ const siteMenu = document.querySelector(".site-menu");
 const overlay = document.querySelector(".overlay");
 const body = document.querySelector("body");
 
-// animation
 
 hamFigure.addEventListener("click", () => {
     body.style.overflowY = "hidden";

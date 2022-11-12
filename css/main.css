@@ -19,6 +19,7 @@ a:hover {
 }
 
 .overlay {
+  animation: overlay-opacity 0.2s forwards;
   background: rgba(255, 255, 255, 0.5);
   bottom: 0;
   height: 100%;
@@ -30,6 +31,14 @@ a:hover {
   z-index: 99;
 }
 
+@keyframes overlay-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hidden {
   display: none;
 }
@@ -106,8 +115,20 @@ a:hover {
   color: #8ACFE5;
 }
 
+@keyframes site-menu-popup {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .show-on {
   align-items: center;
+  animation: site-menu-popup 0.2s 0.2s backwards;
   background-color: #011827;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   display: flex;
@@ -128,8 +149,7 @@ a:hover {
 }
 
 .show-on-item {
-  display: inline-block;
-  padding: 25px 0;
+  padding: 5vh 0;
 }
 
 .main {
